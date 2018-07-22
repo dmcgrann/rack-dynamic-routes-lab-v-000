@@ -1,3 +1,7 @@
 class Application
-  
-  def
+ 
+  @@items = ["Apples","Carrots","Pears"]
+ 
+  def call(env)
+    resp = Rack::Response.new
+    req = Rack::Request.new(env)
