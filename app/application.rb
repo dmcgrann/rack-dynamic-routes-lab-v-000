@@ -10,3 +10,6 @@ class Application
     else
       resp.write "The server did not understand the request."
       resp.status = 400
+    end 
+  end 
+end
