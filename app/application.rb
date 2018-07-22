@@ -9,7 +9,7 @@ class Application
       resp.write "#{item.price}"
     else
       resp.write "The server did not understand the request."
-      resp.status = 400
+      resp.status = 404
     end 
   end 
 end
